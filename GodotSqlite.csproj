@@ -6,8 +6,14 @@
         <EnableDynamicLoading>true</EnableDynamicLoading>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="SQLitePCLRaw.core" Version="2.1.8"/>
-        <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.8"/>
+
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.3" />
     </ItemGroup>
 
 </Project>
